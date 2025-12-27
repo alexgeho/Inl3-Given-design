@@ -1,0 +1,62 @@
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+
+  .title h1 {
+      font-weight: 100;
+      font-size: 2rem;
+      text-transform: capitalize;
+
+  }
+
+  .menuColumnSips {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+  }
+
+  [class^="box-"] {
+      background-color: rgb(229, 243, 249);
+      /* Размещаем контейнеры по центру */
+      display: grid;
+      place-items: center;
+  }
+
+  .container {
+      display: grid;
+      gap: 20px;
+
+      /* ! */
+      grid-template-columns: 33% 33% auto;
+  }
+
+  .box-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr; // 4 | 5
+      gap: 10px;
+      margin-top: 10px;
+  }
+
+  .box-4-left {
+      background: rgba(193, 78, 78, 0.6);
+      padding: 18px;
+      text-align: center;
+      font-weight: 600;
+  }
+
+  .box-5-right {
+      background: rgba(255, 255, 255, 0.6);
+      padding: 18px;
+      text-align: center;
+      font-weight: 600;
+  }
+
+  .espresso,
+  .americano,
+  .piccolo {
+      background: greenyellow;
+      padding: 18px;
+      text-align: center;
+      font-weight: 100;
+  }
