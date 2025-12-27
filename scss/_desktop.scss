@@ -20,19 +20,35 @@
 
   .container {
       display: grid;
-      gap: 20px;
-
+      grid-template-columns: repeat(12, 1fr);
       grid-template-rows: auto 1fr auto;
 
       grid-template-areas:
           "header header header header header header header header header header header header"
-          "sips   sips   sips   sips   grub   grub   grub   grub   news   news   news   news"
-          "sips   sips   sips   sips   grub   grub   grub   grub   contact contact contact contact"
+          "main   main   main   main   main   main   main   main   main   main   main   main"
           "footer footer footer footer footer footer footer footer footer footer footer footer";
   }
 
   .header {
       grid-area: header;
+  }
+
+  .main {
+      grid-area: main;
+  }
+
+  .footer {
+      grid-area: footer;
+  }
+
+  .main {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 20px;
+
+      grid-template-areas:
+          "sips sips sips sips grub grub grub grub news news news news"
+          "sips sips sips sips grub grub grub grub contact contact contact contact";
   }
 
   .sips {
@@ -51,6 +67,33 @@
       grid-area: contact;
   }
 
-  .footer {
-      grid-area: footer;
+  .sips-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+
+      grid-template-areas:
+          "coffee        non-coffee"
+          "special       non-coffee"
+          "iced          add-ons";
+  }
+
+  .coffee {
+      grid-area: coffee;
+  }
+
+  .non-coffee {
+      grid-area: non-coffee;
+  }
+
+  .special-coffee {
+      grid-area: special;
+  }
+
+  .iced-coffee {
+      grid-area: iced;
+  }
+
+  .add-ons {
+      grid-area: add-ons;
   }
