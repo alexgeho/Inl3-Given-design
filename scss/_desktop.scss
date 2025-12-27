@@ -97,3 +97,35 @@
   .add-ons {
       grid-area: add-ons;
   }
+
+  .menu-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+  }
+
+  .menu-item {
+      display: flex;
+      justify-content: space-between;
+      /* ← ключевое */
+      align-items: baseline;
+      padding: 6px 0;
+      font-size: 0.95rem;
+  }
+
+  .menu-item.black {
+      color: #000;
+  }
+
+  .menu-item.pink {
+      color: #ff8fa3;
+  }
+
+  .menu-item.yellow {
+      color: #f5b000;
+  }
+
+  .price {
+      white-space: nowrap;
+      font-weight: 600;
+  }
