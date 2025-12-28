@@ -1,57 +1,7 @@
-@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-h1::after {
-  content: "😀";
-}
-
-.menu-title {
-  position: relative;
-  padding-bottom: 8px;
-  margin-bottom: 16px;
-}
-
-.menu-title::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 3px;
-  background-color: #306f9d;
-}
-
-.menu-title-crub {
-  position: relative;
-  padding-bottom: 8px;
-  margin-bottom: 16px;
-}
-
-.menu-title-crub::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 3px;
-  background-color: #000000;
-}
-
-.title h1 {
-  font-weight: 100;
-  font-size: 2rem;
-  text-transform: capitalize;
-}
-
-.menuList {
-  background: greenyellow;
-  padding: 18px;
-  text-align: center;
-  font-weight: 100;
 }
 
 .container {
@@ -63,8 +13,6 @@ h1::after {
 
 .header {
   grid-area: header;
-  padding: 16px;
-  background-color: #2e6dd8;
 }
 
 .main {
@@ -113,20 +61,6 @@ h1::after {
   grid-area: non-coffee;
 }
 
-.non-coffee {
-  grid-area: non-coffee;
-  position: relative;
-  padding-left: 24px;
-}
-.non-coffee::after {
-  content: "";
-  position: absolute;
-  top: 45px;
-  width: 4px;
-  height: 100%;
-  background-color: #306f9d;
-}
-
 .special-coffee {
   grid-area: special;
 }
@@ -173,27 +107,6 @@ h1::after {
   max-width: 95%;
 }
 
-.menu-item.black {
-  color: #000;
-}
-
-.menu-item.pink {
-  color: #ff8fa3;
-}
-
-.menu-item.yellow {
-  color: #f5b000;
-}
-
-.price {
-  white-space: nowrap;
-  font-weight: 600;
-}
-
-.description {
-  font-size: 0.8rem;
-}
-
 .grub-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -203,7 +116,6 @@ h1::after {
 
 .grub .coffee {
   grid-area: savory;
-  /* savory brekkie */
 }
 
 .grub .baked-goods {
@@ -232,4 +144,73 @@ header {
 
 footer {
   margin-top: 25px;
+}
+
+.header {
+  padding: 16px;
+  background-color: #2e6dd8;
+}
+
+.menu-title {
+  position: relative;
+  padding-bottom: 8px;
+  margin-bottom: 16px;
+}
+.menu-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #306f9d;
+}
+
+.non-coffee {
+  position: relative;
+}
+.non-coffee::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -15px;
+  width: 4px;
+  height: 140%;
+  background-color: #306f9d;
+}
+
+.menu-title-crub {
+  position: relative;
+  padding-bottom: 8px;
+  margin-bottom: 16px;
+}
+.menu-title-crub::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #000000;
+}
+
+.menu-item.black {
+  color: #000;
+}
+
+.menu-item.pink {
+  color: #ff8fa3;
+}
+
+.menu-item.yellow {
+  color: #f5b000;
+}
+
+.price {
+  white-space: nowrap;
+  font-weight: 600;
+}
+
+.description {
+  font-size: 0.8rem;
 }/*# sourceMappingURL=main.css.map */
