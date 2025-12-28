@@ -6,8 +6,7 @@
 
  .menu-title {
      position: relative;
-     padding-bottom: 8px;
-     margin-bottom: 16px;
+     padding: 8px 0 8px;
 
      &::after {
          content: "";
@@ -35,11 +34,24 @@
      }
  }
 
+ .baked-goods {
+     position: relative;
+
+     &::after {
+         content: "";
+         position: absolute;
+         top: 0;
+         left: -15px;
+         width: 4px;
+         height: 205%;
+         background-color: #000000;
+     }
+ }
+
 
  .menu-title-crub {
      position: relative;
-     padding-bottom: 8px;
-     margin-bottom: 16px;
+     padding: 8px 0 8px;
 
      &::after {
          content: "";
@@ -72,5 +84,11 @@
  }
 
  .description {
-     font-size: 0.8rem;
+     font-size: 1.2rem;
+     max-width: 85%;
+ }
+
+ .name {
+     font-size: 1.2rem;
+     font-weight: 700;
  }

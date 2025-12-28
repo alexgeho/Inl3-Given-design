@@ -105,7 +105,7 @@
 
   .menu-item .name {
       grid-area: name;
-      font-weight: 700;
+      
   }
 
   .menu-item .price {
@@ -116,8 +116,6 @@
 
   .menu-item .description {
       grid-area: description;
-      font-size: 0.8rem;
-      max-width: 95%;
   }
 
 

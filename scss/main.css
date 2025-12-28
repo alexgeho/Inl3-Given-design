@@ -92,7 +92,6 @@
 
 .menu-item .name {
   grid-area: name;
-  font-weight: 700;
 }
 
 .menu-item .price {
@@ -103,8 +102,6 @@
 
 .menu-item .description {
   grid-area: description;
-  font-size: 0.8rem;
-  max-width: 95%;
 }
 
 .grub-grid {
@@ -153,8 +150,7 @@ footer {
 
 .menu-title {
   position: relative;
-  padding-bottom: 8px;
-  margin-bottom: 16px;
+  padding: 8px 0 8px;
 }
 .menu-title::after {
   content: "";
@@ -179,10 +175,22 @@ footer {
   background-color: #306f9d;
 }
 
+.baked-goods {
+  position: relative;
+}
+.baked-goods::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -15px;
+  width: 4px;
+  height: 205%;
+  background-color: #000000;
+}
+
 .menu-title-crub {
   position: relative;
-  padding-bottom: 8px;
-  margin-bottom: 16px;
+  padding: 8px 0 8px;
 }
 .menu-title-crub::after {
   content: "";
@@ -212,5 +220,11 @@ footer {
 }
 
 .description {
-  font-size: 0.8rem;
+  font-size: 1.2rem;
+  max-width: 85%;
+}
+
+.name {
+  font-size: 1.2rem;
+  font-weight: 700;
 }/*# sourceMappingURL=main.css.map */
