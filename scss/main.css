@@ -95,7 +95,7 @@
 .menu-item {
   display: grid;
   grid-template-columns: 1fr auto;
-  grid-template-areas: "name price" "description empty";
+  grid-template-areas: "name price" "description description";
   -moz-column-gap: 12px;
        column-gap: 12px;
   row-gap: 4px;
@@ -139,6 +139,29 @@
 
 .description {
   font-size: 0.8rem;
+}
+
+.grub-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  grid-template-areas: "savory        baked" "sweet         baked" "sweet         addons";
+}
+
+.grub .coffee {
+  grid-area: savory; /* savory brekkie */
+}
+
+.grub .baked-goods {
+  grid-area: baked;
+}
+
+.grub .sweet-brekkie {
+  grid-area: sweet;
+}
+
+.grub .add-ons {
+  grid-area: addons;
 }
 
 body {
