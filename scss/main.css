@@ -95,7 +95,7 @@
 .menu-item {
   display: grid;
   grid-template-columns: 1fr auto;
-  grid-template-areas: "name price" "description description";
+  grid-template-areas: "name price" "description empty";
   -moz-column-gap: 12px;
        column-gap: 12px;
   row-gap: 4px;
@@ -117,6 +117,7 @@
 .menu-item .description {
   grid-area: description;
   font-size: 0.8rem;
+  max-width: 95%;
 }
 
 .menu-item.black {
