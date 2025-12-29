@@ -1,3 +1,5 @@
+  // _desktop.scss
+
   * {
       margin: 0;
       padding: 0;
@@ -30,13 +32,17 @@
 
   .main {
       display: grid;
-      grid-template-columns: repeat(12, 1fr);
-      gap: 20px;
-
+      grid-template-columns: 1fr 1fr 1fr;
       grid-template-areas:
-          "sips sips sips sips grub grub grub grub news news news news"
-          "sips sips sips sips grub grub grub grub contact contact contact contact";
+          "sips grub news"
+          "sips grub contact";
   }
+
+
+
+
+
+
 
   .sips {
       grid-area: sips;
@@ -56,14 +62,21 @@
 
   .sips-grid {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr 2px 1fr;
       gap: 24px;
 
       grid-template-areas:
-          "coffee        non-coffee"
-          "special       non-coffee"
-          "iced          add-ons";
+          "coffee v1 non-coffee"
+          "special v1 non-coffee"
+          "iced v1 add-ons";
   }
+
+  .sips-divider {
+      grid-area: v1;
+      background: #000;
+      width: 2px;
+  }
+
 
   .coffee {
       grid-area: coffee;
@@ -105,7 +118,7 @@
 
   .menu-item .name {
       grid-area: name;
-      
+
   }
 
   .menu-item .price {
