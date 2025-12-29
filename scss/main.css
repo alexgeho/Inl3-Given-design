@@ -48,7 +48,6 @@
 .sips-grid {
   display: grid;
   grid-template-columns: 1fr 2px 1fr;
-  grid-template-rows: auto 2px auto 2px auto;
   gap: 24px;
   grid-template-areas: "coffee v1 non-coffee" "special v1 non-coffee" "iced v1 add-ons";
 }
@@ -113,20 +112,7 @@
 .grub-grid {
   display: grid;
   grid-template-columns: 1fr 2px 1fr;
-  gap: 24px;
   grid-template-areas: "savory v1 baked" "sweet  v1 baked" "sweet  v1 addons";
-}
-
-.sips-divider {
-  background: #000;
-}
-
-.sips-divider.v {
-  width: 100%;
-}
-
-.sips-divider.h {
-  height: 100%;
 }
 
 .grub-divider {
