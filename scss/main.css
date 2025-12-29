@@ -111,9 +111,14 @@
 
 .grub-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 24px;
-  grid-template-areas: "savory        baked" "sweet         baked" "sweet         addons";
+  grid-template-columns: 1fr 2px 1fr;
+  grid-template-areas: "savory v1 baked" "sweet  v1 baked" "sweet  v1 addons";
+}
+
+.grub-divider {
+  grid-area: v1;
+  background: #000;
+  width: 2px;
 }
 
 .grub .coffee {
