@@ -144,26 +144,38 @@
   .grub-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
-
       grid-template-areas:
           "savory baked"
           "sweet addons";
-      gap: 0;
   }
 
 
-  .grub .coffee {
+  .grub .savory {
       grid-area: savory;
+      border-top: 2px solid #000000;
+      border-right: 2px solid #000000;
+      padding: 8px;
   }
 
   .grub .baked-goods {
       grid-area: baked;
+      border-top: 2px solid #000000;
+      padding: 8px;
+
+
   }
 
   .grub .sweet-brekkie {
       grid-area: sweet;
+      border-top: 2px solid #000000;
+      border-right: 2px solid #000000;
+      padding: 8px;
+
   }
 
   .grub .add-ons {
       grid-area: addons;
+      border-top: 2px solid #000000;
+      padding: 8px;
+
   }
