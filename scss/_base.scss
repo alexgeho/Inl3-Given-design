@@ -13,3 +13,12 @@ header {
 footer {
   margin-top: 25px;
 }
+
+
+@font-face {
+  font-family: 'Bagel Fat One';
+  src: url('../fonts/BagelFatOne-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}

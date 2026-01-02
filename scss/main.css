@@ -164,9 +164,19 @@ footer {
   margin-top: 25px;
 }
 
+@font-face {
+  font-family: "Bagel Fat One";
+  src: url("../fonts/BagelFatOne-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
 .header h1 {
   color: #fff;
-  font-family: bagel fat;
+  font-family: "Bagel Fat One", cursive;
+  text-transform: capitalize;
+  padding-left: 10px;
+  margin-bottom: -1rem;
 }
 
 .menu-item.black {
