@@ -18,12 +18,10 @@
 
 .main {
   grid-area: main;
-  background-color: bisque;
 }
 
 .footer {
   grid-area: footer;
-  background-color: burlywood;
 }
 
 .main {
@@ -34,12 +32,10 @@
 
 .sips {
   grid-area: sips;
-  background-color: rgb(193, 255, 234);
 }
 
 .grub {
   grid-area: grub;
-  background-color: rgb(222, 255, 189);
 }
 
 .news {
@@ -168,16 +164,21 @@ footer {
   margin-top: 25px;
 }
 
+.header h1 {
+  color: #fff;
+  font-family: bagel fat;
+}
+
 .menu-item.black {
   color: #000;
 }
 
 .menu-item.pink {
-  color: #ff8fa3;
+  color: var(--pink);
 }
 
 .menu-item.yellow {
-  color: #f5b000;
+  color: var(--yellow);
 }
 
 .price {
@@ -195,6 +196,23 @@ footer {
   font-weight: 700;
 }
 
+.news-title {
+  margin-left: 20px;
+}
+
+.news-list {
+  border-top: 2px solid #000;
+  margin-left: 20px;
+}
+
+.grub {
+  margin-left: 20px;
+}
+
 :root {
-  --blue: #2B6EDA ;
+  --blue: #2B6EDA;
+  --lightblue: #8FA8DB;
+  --brown: #422B2B;
+  --pink: #F79EB0;
+  --yellow: #FFB205;
 }/*# sourceMappingURL=main.css.map */

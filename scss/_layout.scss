@@ -1,90 +1,46 @@
-// _layout.scss
+.header h1 {
+    color: #fff;
+    font-family: bagel fat ;
 
-//  .menu-title {
-//      position: relative;
-//      padding: 8px 0 8px;
+}
 
-//      &::after {
-//          content: "";
-//          position: absolute;
-//          left: 0;
-//          top: 0;
-//          width: 100%;
-//          height: 4px;
-//          background-color: #306f9d;
-//      }
-//  }
+.menu-item.black {
+    color: #000;
+}
 
+.menu-item.pink {
+    color: var(--pink);
+}
 
-//  .non-coffee {
-//      position: relative;
+.menu-item.yellow {
+    color: var(--yellow);
+}
 
-//      &::after {
-//          content: "";
-//          position: absolute;
-//          top: 0;
-//          left: -15px;
-//          width: 4px;
-//          height: 140%;
-//          background-color: #306f9d;
-//      }
-//  }
+.price {
+    white-space: nowrap;
+    font-weight: 600;
+}
 
-//  .baked-goods {
-//      position: relative;
+.description {
+    font-size: 1.2rem;
+    max-width: 85%;
+}
 
-//      &::after {
-//          content: "";
-//          position: absolute;
-//          top: 0;
-//          left: -15px;
-//          width: 4px;
-//          height: 205%;
-//          background-color: #000000;
-//      }
-//  }
+.name {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
 
 
-//  .menu-title-crub {
-//      position: relative;
-//      padding: 8px 0 8px;
+.news-title {
+    margin-left: 20px;
+}
 
-//      &::after {
-//          content: "";
-//          position: absolute;
-//          left: 0;
-//          top: 0;
-//          width: 100%;
-//          height: 4px;
-//          background-color: #000000;
-//      }
-//  }
+.news-list {
+    border-top: 2px solid #000;
+    margin-left: 20px;
+}
 
-
-
- .menu-item.black {
-     color: #000;
- }
-
- .menu-item.pink {
-     color: #ff8fa3;
- }
-
- .menu-item.yellow {
-     color: #f5b000;
- }
-
- .price {
-     white-space: nowrap;
-     font-weight: 600;
- }
-
- .description {
-     font-size: 1.2rem;
-     max-width: 85%;
- }
-
- .name {
-     font-size: 1.2rem;
-     font-weight: 700;
- }
+.grub {
+    margin-left: 20px;
+}
