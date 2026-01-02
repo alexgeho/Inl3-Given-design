@@ -19,15 +19,18 @@
 
   .header {
       grid-area: header;
+      background-color: blueviolet;
   }
 
 
   .main {
       grid-area: main;
+      background-color: bisque;
   }
 
   .footer {
       grid-area: footer;
+      background-color: burlywood;
   }
 
   .main {
@@ -39,17 +42,14 @@
   }
 
 
-
-
-
-
-
   .sips {
       grid-area: sips;
+      background-color: rgb(193, 255, 234);
   }
 
   .grub {
       grid-area: grub;
+      background-color: rgb(222, 255, 189);
   }
 
   .news {
@@ -62,41 +62,49 @@
 
   .sips-grid {
       display: grid;
-      grid-template-columns: 1fr 2px 1fr;
-      
-      gap: 24px;
-
+      grid-template-columns: 1fr 1fr;
       grid-template-areas:
-          "coffee v1 non-coffee"
-          "special v1 non-coffee"
-          "iced v1 add-ons";
-  }
+          "coffee non-coffee"
+          "special non-coffee"
+          "iced add-ons";
 
-  .sips-divider {
-      grid-area: v1;
-      background: #000;
-      width: 2px;
   }
-
 
   .coffee {
       grid-area: coffee;
+      border-top: 2px solid #4376da;
+      border-right: 2px solid #4376da;
+      padding: 10px;
+
   }
 
   .non-coffee {
       grid-area: non-coffee;
+      border-top: 2px solid #4376da;
+      padding: 10px;
   }
 
   .special-coffee {
       grid-area: special;
+      border-top: 2px solid #4376da;
+      border-right: 2px solid #4376da;
+      padding: 10px;
+
+
   }
 
   .iced-coffee {
       grid-area: iced;
+      border-top: 2px solid #4376da;
+      border-right: 2px solid #4376da;
+      padding: 10px;
   }
 
   .add-ons {
       grid-area: add-ons;
+      border-top: 2px solid #4376da;
+      padding: 10px;
+
   }
 
   .menu-list {
@@ -133,20 +141,15 @@
   }
 
 
-.grub-grid {
-  display: grid;
-  grid-template-columns: 1fr 2px 1fr;
-  grid-template-areas:
-    "savory v1 baked"
-    "sweet  v1 baked"
-    "sweet  v1 addons";
-}
+  .grub-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
 
-.grub-divider {
-  grid-area: v1;
-  background: #000;
-  width: 2px;
-}
+      grid-template-areas:
+          "savory baked"
+          "sweet addons";
+      gap: 0;
+  }
 
 
   .grub .coffee {
