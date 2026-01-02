@@ -148,7 +148,7 @@
   padding: 8px;
 }
 
-.contact-secrion {
+.contact-section {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   border-top: 2px solid var(--yellow);
