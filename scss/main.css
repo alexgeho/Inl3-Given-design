@@ -150,7 +150,7 @@
 
 .contact-section {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr 1fr;
   border-top: 2px solid var(--yellow);
 }
 
@@ -190,6 +190,27 @@ legend {
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+
+.form-column input,
+.form-column textarea {
+  background: #9aaed9;
+  border: none;
+  border-radius: 14px;
+  padding: 14px 18px;
+  font-size: 1rem;
+  outline: none;
+}
+
+.form-column textarea {
+  min-height: 140px;
+  resize: none;
+}
+
+.form-column input:focus,
+.form-column textarea:focus {
+  outline: 2px solid #2f5ee5;
+  outline-offset: 2px;
 }
 
 body {
