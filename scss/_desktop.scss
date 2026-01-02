@@ -19,7 +19,7 @@
 
   .header {
       grid-area: header;
-      background-color: blueviolet;
+      background-color: var(--blue);
   }
 
 
@@ -72,22 +72,22 @@
 
   .coffee {
       grid-area: coffee;
-      border-top: 2px solid #4376da;
-      border-right: 2px solid #4376da;
+      border-top: 2px solid var(--blue);
+      border-right: 2px solid var(--blue);
       padding: 10px;
 
   }
 
   .non-coffee {
       grid-area: non-coffee;
-      border-top: 2px solid #4376da;
+      border-top: 2px solid var(--blue);
       padding: 10px;
   }
 
   .special-coffee {
       grid-area: special;
-      border-top: 2px solid #4376da;
-      border-right: 2px solid #4376da;
+      border-top: 2px solid var(--blue);
+      border-right: 2px solid var(--blue);
       padding: 10px;
 
 
@@ -95,14 +95,14 @@
 
   .iced-coffee {
       grid-area: iced;
-      border-top: 2px solid #4376da;
-      border-right: 2px solid #4376da;
+      border-top: 2px solid var(--blue);
+      border-right: 2px solid var(--blue);
       padding: 10px;
   }
 
   .add-ons {
       grid-area: add-ons;
-      border-top: 2px solid #4376da;
+      border-top: 2px solid var(--blue);
       padding: 10px;
 
   }
