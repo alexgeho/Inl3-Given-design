@@ -245,10 +245,14 @@
       background: #2f5ee5;
       color: #fff;
       border: none;
-      border-radius: 20px;
-      padding: 10px 24px;
+      border-radius: 10px;
       font-size: 1rem;
+      padding: 8px;
+      width: 80px;
       cursor: pointer;
+      align-self: flex-end;
+
+
   }
 
   .topic-option {
@@ -281,7 +285,7 @@
   }
 
   .topic-option span {
-  display: inline-flex;
-  align-items: center;
-  gap: 12px;
-}
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+  }
