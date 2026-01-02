@@ -157,7 +157,7 @@ body {
 }
 
 header {
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 footer {
@@ -173,6 +173,16 @@ footer {
   font-family: "Oi";
   src: url("../fonts/Oi-Regular.ttf") format("woff2");
   font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+  font-family: "Lilita One";
+  src: url("../fonts/LilitaOne-Regular.ttf") format("woff2");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+  font-family: "Fira Code";
+  src: url("../fonts/FiraCode-VariableFont_wght.ttf") format("woff2");
+  font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
@@ -195,6 +205,12 @@ footer {
   font-size: 4rem;
 }
 
+.news-title {
+  font-family: "Oi";
+  color: var(--pink);
+  font-size: 4rem;
+}
+
 .menu-item.black {
   color: #000;
 }
@@ -213,13 +229,14 @@ footer {
 }
 
 .description {
-  font-size: 1.2rem;
+  font-size: 1rem;
+  font-family: "Fira Code";
   max-width: 85%;
 }
 
 .name {
   font-size: 1.2rem;
-  font-weight: 700;
+  font-family: "Fira Code";
 }
 
 .news-title {
@@ -227,12 +244,21 @@ footer {
 }
 
 .news-list {
-  border-top: 2px solid #000;
+  border-top: 2px solid var(--pink);
   margin-left: 20px;
 }
 
 .grub {
   margin-left: 20px;
+}
+
+.menu-title-crub {
+  font-family: "Lilita One";
+}
+
+.menu-title {
+  font-family: "Lilita One";
+  color: var(--blue);
 }
 
 :root {
