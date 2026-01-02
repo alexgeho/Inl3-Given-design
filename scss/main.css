@@ -213,6 +213,16 @@ legend {
   outline-offset: 2px;
 }
 
+button {
+  background: #2f5ee5;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 24px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
 body {
   font-family: sans-serif;
   font-size: 1.7em;
