@@ -17,6 +17,14 @@ header {
   margin-bottom: 20px;
 }
 
+nav {
+  display: none;
+}
+
+nav.open {
+  display: flex;
+}
+
 main {
   padding: 15px;
 }

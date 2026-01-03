@@ -14,12 +14,21 @@
 
             <header class="header">
                 <h1>good morning club</h1>
-                <nav class="menu">
-                 <ul>
-                    <li>home</li>
-                    <li>menu</li>
-                    <li>contact</li>
-                 </ul>          
+
+                <!-- hamburger -->
+                <button id="menuButton" class="menu-btn" aria-label="Open menu">
+                    ☰
+                </button>
+
+                <!-- fullscreen menu -->
+                <nav id="mainNav" class="menu">
+                    <button id="closeMenu" class="close-btn" aria-label="Close menu">✕</button>
+
+                    <ul>
+                        <li>Home</li>
+                        <li>Menu</li>
+                        <li>Contact</li>
+                    </ul>
                 </nav>
             </header>
 
@@ -479,11 +488,11 @@
                                     <textarea name="message" placeholder="Message"></textarea>
                                 </label>
 
-                                <button type="submit">Send</button>
+                                <button class="button-form" type="submit">Send</button>
                             </div>
 
                         </div>
-                        
+
                         <div class="column-right">
                             <fieldset class="form-topics">
 
@@ -533,6 +542,24 @@
                 <p>070-123 45 67</p>
             </div>
         </footer>
+        <script>
+            const menuBtn = document.getElementById('menuButton');
+            const closeBtn = document.getElementById('closeButton');
+            const menu = document.getElementById('mainNav');
+
+            menuBtn.addEventListener('click', () => {
+                menu.classList.add('open');
+                menuBtn.style.display = 'none';
+                closeBtn.style.display = 'block';
+            });
+
+            closeBtn.addEventListener('click', () => {
+                menu.classList.remove('open');
+                closeBtn.style.display = 'none';
+                menuBtn.style.display = 'block';
+            });
+        </script>
+
 
     </body>
 
