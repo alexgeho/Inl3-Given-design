@@ -86,12 +86,6 @@
   padding: 10px;
 }
 
-.menu-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
 .menu-item {
   display: grid;
   grid-template-columns: 1fr auto;
@@ -306,7 +300,11 @@ footer {
   font-display: swap;
   font-family: "Fira Code";
   src: url("../fonts/FiraCode-VariableFont_wght.ttf") format("woff2");
-  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+  font-family: "Fira Code Bold";
+  src: url("../fonts/FiraCode-VariableFont_wght.ttf") format("woff2");
+  font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
@@ -359,8 +357,9 @@ footer {
 }
 
 .name {
-  font-size: 1.2rem;
-  font-family: "Fira Code";
+  font-size: 1.3rem;
+  font-family: "Fira Code Bold";
+  padding: 1px;
 }
 
 .news-title {
