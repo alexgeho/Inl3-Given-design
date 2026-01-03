@@ -1,0 +1,36 @@
+@media (max-width: 768px) {
+
+  .container {
+    padding: 16px;
+  }
+
+  h1 {
+    font-size: 3.8rem;
+  }
+
+  .sips-title,
+  .crub-title,
+  .news-title,
+  .contact-title {
+    font-size: 2.4rem;
+  }
+
+  .sips-grid,
+  .grub-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "sips"
+      "grub"
+      "news"
+      "contact";
+    gap: 32px;
+  }
+
+}
