@@ -444,6 +444,14 @@ button {
   top: 0.8em;
 }
 
+.name-img img {
+  height: 80px;
+}
+
+.contact-section {
+  padding: 20px 10px;
+}
+
 :root {
   --blue: #2B6EDA;
   --lightblue: #8FA8DB;
