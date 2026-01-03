@@ -1,10 +1,4 @@
 @charset "UTF-8";
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 .container {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -15,6 +9,7 @@
 .header {
   grid-area: header;
   background-color: var(--blue);
+  display: flex;
 }
 
 .main {
@@ -231,6 +226,7 @@ legend {
 }
 
 .topic-option input:checked + span::before {
+  position: relative;
   content: "✓";
   font-size: 2.5rem;
   color: #000;
@@ -265,17 +261,26 @@ legend {
   text-align: right;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: sans-serif;
   font-size: 1.7em;
   width: 100%;
-  min-height: 100vh;
-  padding: 15px;
+  max-height: 100vh;
   background-image: url(../assets/background.jpg);
 }
 
 header {
   margin-bottom: 20px;
+}
+
+main {
+  padding: 15px;
 }
 
 footer {
@@ -285,7 +290,7 @@ footer {
 @font-face {
   font-family: "Bagel Fat One";
   src: url("../fonts/BagelFatOne-Regular.woff2") format("woff2");
-  font-weight: 400;
+  font-weight: 100;
   font-style: normal;
   font-display: swap;
   font-family: "Oi";
@@ -304,7 +309,7 @@ footer {
   font-display: swap;
   font-family: "Fira Code Bold";
   src: url("../fonts/FiraCode-VariableFont_wght.ttf") format("woff2");
-  font-weight: 500;
+  font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
@@ -312,8 +317,8 @@ footer {
   color: #fff;
   font-family: "Bagel Fat One", cursive;
   text-transform: capitalize;
-  padding-left: 10px;
   margin-bottom: -1rem;
+  font-size: 8rem;
 }
 
 .sips-title {
