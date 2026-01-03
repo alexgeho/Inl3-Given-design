@@ -213,18 +213,6 @@ legend {
   outline-offset: 2px;
 }
 
-button {
-  background: #2f5ee5;
-  color: #fff;
-  border: none;
-  border-radius: 10px;
-  font-size: 1rem;
-  padding: 8px;
-  width: 80px;
-  cursor: pointer;
-  align-self: flex-end;
-}
-
 .topic-option {
   display: flex;
   align-items: center;
@@ -289,6 +277,7 @@ body {
   width: 100%;
   min-height: 100vh;
   padding: 15px;
+  background-image: url(../assets/background.jpg);
 }
 
 header {
@@ -421,6 +410,38 @@ footer {
 .page-divider {
   display: flex;
   justify-content: center;
+}
+
+.form-column input::-moz-placeholder, .form-column textarea::-moz-placeholder {
+  color: #000000;
+  font-family: "Fira Code";
+  font-size: 1.4rem;
+}
+
+.form-column input::placeholder,
+.form-column textarea::placeholder {
+  color: #000000;
+  font-family: "Fira Code";
+  font-size: 1.4rem;
+}
+
+button {
+  background: #2f5ee5;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  padding: 8px;
+  width: 80px;
+  cursor: pointer;
+  align-self: flex-end;
+  font-family: "Fira Code";
+  text-transform: uppercase;
+}
+
+.contact-title img {
+  position: relative;
+  top: 0.8em;
 }
 
 :root {
