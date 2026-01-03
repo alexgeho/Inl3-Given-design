@@ -298,3 +298,46 @@
           text-align: right;
       }
   }
+
+
+  @media (max-width: 768px) {
+  .container {
+    padding: 16px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .sips-title,
+  .crub-title,
+  .news-title,
+  .contact-title {
+    font-size: 2.4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .sips-grid,
+  .grub-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "sips"
+      "grub"
+      "news"
+      "contact";
+    gap: 32px;
+  }
+}
