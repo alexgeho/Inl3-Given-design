@@ -264,10 +264,23 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  border-top: 3px solid var(--blue);
+  padding: 20px;
+}
+.footer p {
+  font-family: "Fira Code";
+  font-size: 1rem;
+}
+
+.footer-center p {
+  text-align: center;
 }
 
 .footer-right {
   align-self: flex-end;
+}
+.footer-right p {
+  text-align: right;
 }
 
 body {
@@ -304,7 +317,7 @@ footer {
   font-display: swap;
   font-family: "Fira Code";
   src: url("../fonts/FiraCode-VariableFont_wght.ttf") format("woff2");
-  font-weight: 400;
+  font-weight: 200;
   font-style: normal;
   font-display: swap;
 }
