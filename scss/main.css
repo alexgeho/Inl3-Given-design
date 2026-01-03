@@ -304,7 +304,7 @@ footer {
   font-display: swap;
   font-family: "Fira Code Bold";
   src: url("../fonts/FiraCode-VariableFont_wght.ttf") format("woff2");
-  font-weight: 600;
+  font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
@@ -387,6 +387,7 @@ footer {
 .second-title {
   font-family: "Lilita One";
   font-size: 1.2rem;
+  padding-top: 20px;
 }
 
 .contact-title {
