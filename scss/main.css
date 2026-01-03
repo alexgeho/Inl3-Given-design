@@ -407,6 +407,17 @@ footer {
   color: var(--yellow);
 }
 
+.menu-icon {
+  position: relative;
+  top: -20px;
+  z-index: 2;
+  left: 50%;
+}
+.menu-icon img {
+  height: 70px;
+  width: auto;
+}
+
 :root {
   --blue: #2B6EDA;
   --lightblue: #8FA8DB;
