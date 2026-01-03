@@ -411,11 +411,16 @@ footer {
   position: relative;
   top: -20px;
   z-index: 2;
-  left: 50%;
+  left: 40%;
 }
 .menu-icon img {
   height: 70px;
   width: auto;
+}
+
+.page-divider {
+  display: flex;
+  justify-content: center;
 }
 
 :root {
