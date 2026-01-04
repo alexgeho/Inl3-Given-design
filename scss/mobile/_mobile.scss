@@ -4,9 +4,20 @@
     padding: 16px;
   }
 
-  h1 {
-    font-size: 3.8rem;
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto 1fr auto;
+
+    grid-template-areas:
+      "header header header header header header header header header header header header"
+      "main   main   main   main   main   main   main   main   main   main   main   main"
+      "footer footer footer footer footer footer footer footer footer footer footer footer";
+
+    margin-top: 100px;
   }
+
 
   .sips-title,
   .crub-title,
