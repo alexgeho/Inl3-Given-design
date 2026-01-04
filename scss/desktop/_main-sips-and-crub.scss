@@ -30,21 +30,19 @@
     grid-area: coffee;
     border-top: 2px solid var(--blue);
     border-right: 2px solid var(--blue);
-    padding: 10px;
 
 }
 
 .non-coffee {
     grid-area: non-coffee;
     border-top: 2px solid var(--blue);
-    padding: 10px;
+    padding-left: 10px;
 }
 
 .special-coffee {
     grid-area: special;
     border-top: 2px solid var(--blue);
     border-right: 2px solid var(--blue);
-    padding: 10px;
 
 
 }
@@ -53,13 +51,12 @@
     grid-area: iced;
     border-top: 2px solid var(--blue);
     border-right: 2px solid var(--blue);
-    padding: 10px;
 }
 
 .add-ons {
     grid-area: add-ons;
     border-top: 2px solid var(--blue);
-    padding: 10px;
+    padding-left: 10px;
 
 }
 
@@ -89,6 +86,10 @@
 
 .menu-item .description {
     grid-area: description;
+}
+
+.menu-icon{
+    list-style: none;
 }
 
 

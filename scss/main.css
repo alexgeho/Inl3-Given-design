@@ -98,6 +98,7 @@ footer {
 .price {
   white-space: nowrap;
   font-weight: 600;
+  padding-right: 15px;
 }
 
 .description {
@@ -109,7 +110,6 @@ footer {
 .name {
   font-size: 1.3rem;
   font-family: "Fira Code Bold";
-  padding: 1px;
 }
 
 .news-title {
@@ -316,33 +316,30 @@ footer {
   grid-area: coffee;
   border-top: 2px solid var(--blue);
   border-right: 2px solid var(--blue);
-  padding: 10px;
 }
 
 .non-coffee {
   grid-area: non-coffee;
   border-top: 2px solid var(--blue);
-  padding: 10px;
+  padding-left: 10px;
 }
 
 .special-coffee {
   grid-area: special;
   border-top: 2px solid var(--blue);
   border-right: 2px solid var(--blue);
-  padding: 10px;
 }
 
 .iced-coffee {
   grid-area: iced;
   border-top: 2px solid var(--blue);
   border-right: 2px solid var(--blue);
-  padding: 10px;
 }
 
 .add-ons {
   grid-area: add-ons;
   border-top: 2px solid var(--blue);
-  padding: 10px;
+  padding-left: 10px;
 }
 
 .menu-item {
@@ -367,6 +364,10 @@ footer {
 
 .menu-item .description {
   grid-area: description;
+}
+
+.menu-icon {
+  list-style: none;
 }
 
 .grub-grid {
