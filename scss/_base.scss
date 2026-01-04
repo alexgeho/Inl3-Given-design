@@ -4,6 +4,18 @@
   box-sizing: border-box;
 }
 
+.container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto 1fr auto;
+
+  grid-template-areas:
+    "header header header header header header header header header header header header"
+    "main   main   main   main   main   main   main   main   main   main   main   main"
+    "footer footer footer footer footer footer footer footer footer footer footer footer";
+
+  margin-top: 170px;
+}
 
 body {
   font-family: sans-serif;
@@ -15,14 +27,6 @@ body {
 
 header {
   margin-bottom: 20px;
-}
-
-nav {
-  display: none;
-}
-
-nav.open {
-  display: flex;
 }
 
 main {
