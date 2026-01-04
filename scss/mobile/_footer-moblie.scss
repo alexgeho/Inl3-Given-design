@@ -1,0 +1,23 @@
+@media (max-width: 768px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;   // ⬅️ ВАЖНО
+    gap: 14px;
+    border-top: 3px solid var(--blue);
+    padding: 20px;
+  }
+
+  .footer-left,
+  .footer-center,
+  .footer-right {
+    width: 100%;           // ⬅️ КЛЮЧ
+    text-align: center;
+  }
+
+  .footer p {
+    font-family: 'Fira Code';
+    font-size: 1.1rem;
+    line-height: 1.4;
+  }
+}

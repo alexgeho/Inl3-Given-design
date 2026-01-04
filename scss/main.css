@@ -284,13 +284,6 @@ footer {
   text-align: center;
 }
 
-.footer-right {
-  align-self: flex-end;
-}
-.footer-right p {
-  text-align: right;
-}
-
 .main {
   grid-area: main;
   display: grid;
@@ -511,6 +504,11 @@ legend {
   gap: 12px;
 }
 
+.name-img img {
+  width: 300px;
+  height: auto;
+}
+
 @media (max-width: 768px) {
   .container {
     padding: 16px;
@@ -619,5 +617,125 @@ legend {
     grid-template-columns: 1fr;
     grid-template-areas: "sips" "grub" "news" "contact";
     gap: 32px;
+  }
+}
+@media (max-width: 768px) {
+  .news {
+    grid-area: news;
+  }
+  .contact {
+    grid-area: contact;
+  }
+  .contact-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-top: 2px solid var(--yellow);
+  }
+  fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+  }
+  legend {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+  .form-topics {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+  }
+  .form-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+  }
+  .form-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .form-column input,
+  .form-column textarea {
+    background: #9aaed9;
+    border: none;
+    border-radius: 14px;
+    padding: 14px 18px;
+    font-size: 1rem;
+    outline: none;
+  }
+  .form-column textarea {
+    min-height: 140px;
+    resize: none;
+  }
+  .form-column input:focus,
+  .form-column textarea:focus {
+    outline: 2px solid #2f5ee5;
+    outline-offset: 2px;
+  }
+  .topic-option {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+  }
+  .topic-option input {
+    position: absolute;
+    opacity: 0;
+  }
+  .topic-option span::before {
+    content: "";
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #9aaed9;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .topic-option input:checked + span::before {
+    position: relative;
+    content: "✓";
+    font-size: 2.5rem;
+    color: #000;
+  }
+  .topic-option span {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .name-img img {
+    width: 200px;
+    height: auto;
+  }
+}
+@media (max-width: 768px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    border-top: 3px solid var(--blue);
+    padding: 20px;
+  }
+  .footer-left,
+  .footer-center,
+  .footer-right {
+    width: 100%;
+    text-align: center;
+  }
+  .footer p {
+    font-family: "Fira Code";
+    font-size: 1.1rem;
+    line-height: 1.4;
   }
 }/*# sourceMappingURL=main.css.map */
