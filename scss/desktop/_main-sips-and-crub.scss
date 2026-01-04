@@ -1,0 +1,132 @@
+.main {
+  grid-area: main;
+  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+        "sips grub news"
+        "sips grub contact";
+}
+
+.sips {
+    grid-area: sips;
+}
+
+.grub {
+    grid-area: grub;
+}
+
+
+.sips-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "coffee non-coffee"
+        "special non-coffee"
+        "iced add-ons";
+
+}
+
+.coffee {
+    grid-area: coffee;
+    border-top: 2px solid var(--blue);
+    border-right: 2px solid var(--blue);
+    padding: 10px;
+
+}
+
+.non-coffee {
+    grid-area: non-coffee;
+    border-top: 2px solid var(--blue);
+    padding: 10px;
+}
+
+.special-coffee {
+    grid-area: special;
+    border-top: 2px solid var(--blue);
+    border-right: 2px solid var(--blue);
+    padding: 10px;
+
+
+}
+
+.iced-coffee {
+    grid-area: iced;
+    border-top: 2px solid var(--blue);
+    border-right: 2px solid var(--blue);
+    padding: 10px;
+}
+
+.add-ons {
+    grid-area: add-ons;
+    border-top: 2px solid var(--blue);
+    padding: 10px;
+
+}
+
+
+
+.menu-item {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-areas:
+        "name price"
+        "description description";
+    column-gap: 12px;
+    row-gap: 4px;
+    font-size: 0.95rem;
+}
+
+.menu-item .name {
+    grid-area: name;
+
+}
+
+.menu-item .price {
+    grid-area: price;
+    white-space: nowrap;
+    font-weight: 600;
+}
+
+.menu-item .description {
+    grid-area: description;
+}
+
+
+.grub-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "savory baked"
+        "sweet addons";
+}
+
+
+.grub .savory {
+    grid-area: savory;
+    border-top: 2px solid #000000;
+    border-right: 2px solid #000000;
+    padding: 8px;
+}
+
+.grub .baked-goods {
+    grid-area: baked;
+    border-top: 2px solid #000000;
+    padding: 8px;
+
+
+}
+
+.grub .sweet-brekkie {
+    grid-area: sweet;
+    border-top: 2px solid #000000;
+    border-right: 2px solid #000000;
+    padding: 8px;
+
+}
+
+.grub .add-ons {
+    grid-area: addons;
+    border-top: 2px solid #000000;
+    padding: 8px;
+
+}

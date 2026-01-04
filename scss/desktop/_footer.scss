@@ -1,0 +1,27 @@
+.footer {
+    grid-area: footer;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    border-top: 3px solid var(--blue);
+    padding: 20px;
+
+    p {
+        font-family: 'Fira Code';
+        font-size: 1rem;
+    }
+}
+
+
+.footer-center p {
+    text-align: center;
+}
+
+.footer-right {
+    align-self: flex-end;
+
+    p {
+        text-align: right;
+    }
+}
