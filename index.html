@@ -13,24 +13,23 @@
         <div class="container">
 
             <header class="header">
-                <h1>good morning club</h1>
+                <h1>Good Morning Club</h1>
 
-                <!-- hamburger -->
-                <button id="menuButton" class="menu-btn" aria-label="Open menu">
-                    ☰
-                </button>
-
-                <!-- fullscreen menu -->
-                <nav id="mainNav" class="menu">
-                    <button id="closeMenu" class="close-btn" aria-label="Close menu">✕</button>
-
-                    <ul>
-                        <li>Home</li>
-                        <li>Menu</li>
-                        <li>Contact</li>
-                    </ul>
-                </nav>
+                <div class="menu-controls">
+                    <button id="menuButton" class="menu-btn">☰</button>
+                    <button id="closeMenu" class="close-btn">✕</button>
+                </div>
             </header>
+
+            <nav id="mainNav" class="menu">
+                <ul>
+                    <li>Home</li>
+                    <li>Menu</li>
+                    <li>Contact</li>
+                </ul>
+            </nav>
+
+
 
             <main class="main">
 
@@ -543,22 +542,23 @@
             </div>
         </footer>
         <script>
-            const menuBtn = document.getElementById('menuButton');
-            const closeBtn = document.getElementById('closeButton');
             const menu = document.getElementById('mainNav');
+            const openBtn = document.getElementById('menuButton');
+            const closeBtn = document.getElementById('closeMenu');
 
-            menuBtn.addEventListener('click', () => {
+            openBtn.addEventListener('click', () => {
                 menu.classList.add('open');
-                menuBtn.style.display = 'none';
+                openBtn.style.display = 'none';
                 closeBtn.style.display = 'block';
             });
 
             closeBtn.addEventListener('click', () => {
                 menu.classList.remove('open');
                 closeBtn.style.display = 'none';
-                menuBtn.style.display = 'block';
+                openBtn.style.display = 'block';
             });
         </script>
+
 
 
     </body>
