@@ -475,17 +475,22 @@
                     <form class="contact-section">
                         <div class="column-left">
                             <div class="form-fields">
-                                <label class="form-column">
-                                    <input type="text" name="firstName" placeholder="First name">
-                                </label>
 
-                                <label class="form-column">
-                                    <input type="email" name="email" placeholder="E-mail">
-                                </label>
+                                <div class="field">
+                                    <input type="text" id="firstName" name="firstName" placeholder=" " required />
+                                    <label for="firstName">First name</label>
+                                </div>
 
-                                <label class="form-column">
-                                    <textarea name="message" placeholder="Message"></textarea>
-                                </label>
+
+                                <div class="field">
+                                    <input type="text" id="email" name="email" placeholder=" " required />
+                                    <label for="email">Email</label>
+                                </div>
+
+                                <div class="field">
+                                    <textarea id="message" name="message" placeholder=" " required></textarea>
+                                    <label for="message">Message</label>
+                                </div>
 
                                 <button class="button-form" type="submit">Send</button>
                             </div>

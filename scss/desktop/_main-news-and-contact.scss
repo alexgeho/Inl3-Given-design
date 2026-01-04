@@ -50,26 +50,10 @@ legend {
     gap: 10px;
 }
 
-.form-column input,
-.form-column textarea {
-    background: #9aaed9;
-    border: none;
-    border-radius: 14px;
-    padding: 14px 18px;
-    font-size: 1rem;
-    outline: none;
-}
 
-.form-column textarea {
-    min-height: 140px;
-    resize: none;
-}
 
-.form-column input:focus,
-.form-column textarea:focus {
-    outline: 2px solid #2f5ee5;
-    outline-offset: 2px;
-}
+
+
 
 
 .topic-option {
@@ -109,7 +93,60 @@ legend {
     gap: 12px;
 }
 
-.name-img img{
+.name-img img {
     width: 300px;
     height: auto;
+}
+
+
+// ADD
+.field {
+    position: relative;
+}
+
+.field input,
+.field textarea {
+    width: 100%;
+    border: none;
+    border-radius: 14px;
+    padding: 18px 18px 10px;
+    font-size: 1rem;
+    outline: none;
+    background: #9aaed9;
+    resize: none;
+}
+
+.field textarea {
+    min-height: 110px;
+
+}
+
+
+.field label {
+    position: absolute;
+    left: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.4rem;
+    color: #3b6edc;
+    pointer-events: none;
+    transition: 0.25s ease;
+}
+
+
+.field textarea + label {
+  top: 18px;             
+  transform: none;      
+}
+
+.field input:focus+label,
+.field input:not(:placeholder-shown)+label {
+    top: -9px;
+    font-size: 1.1rem;
+}
+
+.field textarea:focus+label,
+.field textarea:not(:placeholder-shown)+label {
+    top: -19px;
+    font-size: 1.1rem;
 }
