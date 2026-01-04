@@ -1,22 +1,10 @@
 @media (max-width: 768px) {
 
   .container {
-    padding: 16px;
-  }
-
-
-  .container {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: auto 1fr auto;
-
-    grid-template-areas:
-      "header header header header header header header header header header header header"
-      "main   main   main   main   main   main   main   main   main   main   main   main"
-      "footer footer footer footer footer footer footer footer footer footer footer footer";
-
+    display: block;
     margin-top: 100px;
   }
+
 
 
   .sips-title,
@@ -29,8 +17,6 @@
   .sips-grid,
   .grub-grid {
     display: grid;
-    grid-template-columns: 1fr;
-    gap: 24px;
   }
 
   .main {
@@ -41,7 +27,6 @@
       "grub"
       "news"
       "contact";
-    gap: 32px;
   }
 
 }
