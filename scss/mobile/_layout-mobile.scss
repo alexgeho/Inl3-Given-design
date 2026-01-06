@@ -1,4 +1,4 @@
-@media (min-width: 769px) {
+@media (max-width: 768px) {
 
 .sips-title {
     font-family: 'Oi';
@@ -32,7 +32,6 @@
 
 .price {
     white-space: nowrap;
-    font-weight: 600;
     padding-right: 15px;
 }
 
@@ -49,7 +48,7 @@
 
 
 .news-title {
-    margin-left: 20px;
+    margin-left: 70px;
 }
 
 .news-list {
@@ -134,5 +133,4 @@
 .contact-section {
     padding: 20px 10px;
 }
-
 }
