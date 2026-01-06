@@ -25,7 +25,7 @@ Lighthouse-rapport (GitHub Pages):
 - SEO: 91  
 
 📸 Skärmdump:
-![Lighthouse](./screenshots/lighthouse.png)
+![Lighthouse](./screenshots/g%20lighthouse.png)
 
 ---
 
@@ -34,8 +34,6 @@ Lighthouse-rapport (GitHub Pages):
 **Desktop**
 ![Desktop](./screenshots/desktop.png)
 
-**Mobil**
-![Mobile](./screenshots/mobile.png)
 
 ---
 

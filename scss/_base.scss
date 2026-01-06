@@ -14,7 +14,7 @@
     "main   main   main   main   main   main   main   main   main   main   main   main"
     "footer footer footer footer footer footer footer footer footer footer footer footer";
 
-  margin-top: 170px;
+  margin-top: 110px;
 }
 
 
@@ -28,11 +28,11 @@ body {
 
 
 main {
-  padding: 15px;
+  padding: 10px;
 }
 
 footer {
-  margin-top: 25px;
+  margin-top: 15px;
 }
 
 
@@ -40,13 +40,11 @@ footer {
   font-family: 'Bagel Fat One';
   src: url('../fonts/BagelFatOne-Regular.woff2') format('woff2');
   font-weight: 100;
-  font-style: normal;
   font-display: swap;
 
   font-family: 'Oi';
   src: url('../fonts/Oi-Regular.ttf') format('woff2');
   font-weight: 100;
-  font-style: normal;
   font-display: swap;
 
   font-family: 'Lilita One';

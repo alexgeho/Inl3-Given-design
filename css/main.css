@@ -10,7 +10,7 @@
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: auto 1fr auto;
   grid-template-areas: "header header header header header header header header header header header header" "main   main   main   main   main   main   main   main   main   main   main   main" "footer footer footer footer footer footer footer footer footer footer footer footer";
-  margin-top: 170px;
+  margin-top: 110px;
 }
 
 body {
@@ -22,23 +22,21 @@ body {
 }
 
 main {
-  padding: 15px;
+  padding: 10px;
 }
 
 footer {
-  margin-top: 25px;
+  margin-top: 15px;
 }
 
 @font-face {
   font-family: "Bagel Fat One";
   src: url("../fonts/BagelFatOne-Regular.woff2") format("woff2");
   font-weight: 100;
-  font-style: normal;
   font-display: swap;
   font-family: "Oi";
   src: url("../fonts/Oi-Regular.ttf") format("woff2");
   font-weight: 100;
-  font-style: normal;
   font-display: swap;
   font-family: "Lilita One";
   src: url("../fonts/LilitaOne-Regular.ttf") format("woff2");
@@ -85,12 +83,12 @@ footer {
     padding-right: 15px;
   }
   .description {
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-family: "Fira Code";
     max-width: 85%;
   }
   .name {
-    font-size: 1.3rem;
+    font-size: 1rem;
     font-family: "Fira Code Bold";
   }
   .news-title {
@@ -105,10 +103,12 @@ footer {
   }
   .menu-title-crub {
     font-family: "Lilita One";
+    font-size: 1.6rem;
   }
   .menu-title {
     font-family: "Lilita One";
     color: var(--blue);
+    font-size: 1.6rem;
   }
   .second-title {
     font-family: "Lilita One";
@@ -183,18 +183,19 @@ footer {
   top: 0;
   left: 0;
   right: 0;
-  height: 170px;
+  height: 100px;
   z-index: 2000;
 }
 .header h1 {
   color: #fff;
   font-family: "Bagel Fat One";
-  font-size: 7rem;
+  font-size: 6rem;
+  margin-bottom: -20px;
 }
 
 .menu {
   position: fixed;
-  top: 170px;
+  top: 100px;
   left: 0;
   right: 0;
   bottom: 0;
@@ -241,6 +242,7 @@ footer {
   align-items: flex-start;
   border-top: 3px solid var(--blue);
   padding: 20px;
+  margin-bottom: 30px;
 }
 .footer p {
   font-family: "Fira Code";
@@ -464,14 +466,14 @@ legend {
   border: none;
   border-radius: 14px;
   padding: 18px 18px 10px;
-  font-size: 1rem;
+  font-size: 0.8rem;
   outline: none;
   background: #9aaed9;
   resize: none;
 }
 
 .field textarea {
-  min-height: 110px;
+  min-height: 90px;
 }
 
 .field label {

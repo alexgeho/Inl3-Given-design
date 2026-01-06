@@ -1,138 +1,140 @@
 @media (min-width: 769px) {
 
-.sips-title {
-    font-family: 'Oi';
-    color: var(--blue);
-    font-size: 4rem;
-}
-
-.crub-title {
-    font-family: 'Oi';
-    font-size: 4rem;
-}
-
-.news-title {
-    font-family: 'Oi';
-    color: var(--pink);
-    font-size: 4rem;
-}
-
-.menu-item.black {
-    color: #000;
-}
-
-.menu-item.pink {
-    color: var(--pink);
-}
-
-.menu-item.yellow {
-    color: var(--yellow);
-}
-
-
-.price {
-    white-space: nowrap;
-    font-weight: 600;
-    padding-right: 15px;
-}
-
-.description {
-    font-size: 1rem;
-    font-family: 'Fira Code';
-    max-width: 85%;
-}
-
-.name {
-    font-size: 1.3rem;
-    font-family: 'Fira Code Bold';
-}
-
-
-.news-title {
-    margin-left: 20px;
-}
-
-.news-list {
-    border-top: 2px solid var(--pink);
-    margin-left: 20px;
-}
-
-.grub {
-    margin-left: 20px;
-}
-
-.menu-title-crub {
-    font-family: 'Lilita One';
-}
-
-.menu-title {
-    font-family: 'Lilita One';
-    color: var(--blue);
-
-}
-
-.second-title {
-    font-family: 'Lilita One';
-    font-size: 1.2rem;
-    padding-top: 20px;
-}
-
-.contact-title {
-    font-family: 'Oi';
-    font-size: 4rem;
-    color: var(--yellow);
-}
-
-.menu-icon {
-    position: relative;
-    top: -20px;
-    z-index: 2;
-    left: 40%;
-
-    img {
-        height: 70px;
-        width: auto;
+    .sips-title {
+        font-family: 'Oi';
+        color: var(--blue);
+        font-size: 4rem;
     }
-}
 
-.page-divider {
-    display: flex;
-    justify-content: center;
-}
+    .crub-title {
+        font-family: 'Oi';
+        font-size: 4rem;
+    }
 
-.form-column input::placeholder,
-.form-column textarea::placeholder {
-    color: #000000;
-    font-family: 'Fira Code';
-    font-size: 1.4rem;
-}
+    .news-title {
+        font-family: 'Oi';
+        color: var(--pink);
+        font-size: 4rem;
+    }
 
-.button-form {
-    background: #2f5ee5;
-    color: #fff;
-    border: none;
-    border-radius: 10px;
-    font-size: 1.2rem;
-    padding: 8px;
-    width: 80px;
-    cursor: pointer;
-    align-self: flex-end;
-    font-family: 'Fira Code';
-    text-transform: uppercase;
-}
+    .menu-item.black {
+        color: #000;
+    }
+
+    .menu-item.pink {
+        color: var(--pink);
+    }
+
+    .menu-item.yellow {
+        color: var(--yellow);
+    }
 
 
-.contact-title img {
-    position: relative;
-    top: 0.8em;
-}
+    .price {
+        white-space: nowrap;
+        font-weight: 600;
+        padding-right: 15px;
+    }
 
-.name-img img {
-    height: 80px;
-}
+    .description {
+        font-size: 0.9rem;
+        font-family: 'Fira Code';
+        max-width: 85%;
+    }
 
-.contact-section {
-    padding: 20px 10px;
-}
+    .name {
+        font-size: 1rem;
+        font-family: 'Fira Code Bold';
+    }
+
+
+    .news-title {
+        margin-left: 20px;
+    }
+
+    .news-list {
+        border-top: 2px solid var(--pink);
+        margin-left: 20px;
+    }
+
+    .grub {
+        margin-left: 20px;
+    }
+
+    .menu-title-crub {
+        font-family: 'Lilita One';
+        font-size: 1.6rem;
+    }
+
+    .menu-title {
+        font-family: 'Lilita One';
+        color: var(--blue);
+        font-size: 1.6rem;
+
+    }
+
+    .second-title {
+        font-family: 'Lilita One';
+        font-size: 1.2rem;
+        padding-top: 20px;
+    }
+
+    .contact-title {
+        font-family: 'Oi';
+        font-size: 4rem;
+        color: var(--yellow);
+    }
+
+    .menu-icon {
+        position: relative;
+        top: -20px;
+        z-index: 2;
+        left: 40%;
+
+        img {
+            height: 70px;
+            width: auto;
+        }
+    }
+
+    .page-divider {
+        display: flex;
+        justify-content: center;
+    }
+
+    .form-column input::placeholder,
+    .form-column textarea::placeholder {
+        color: #000000;
+        font-family: 'Fira Code';
+        font-size: 1.4rem;
+    }
+
+    .button-form {
+        background: #2f5ee5;
+        color: #fff;
+        border: none;
+        border-radius: 10px;
+        font-size: 1.2rem;
+        padding: 8px;
+        width: 80px;
+        cursor: pointer;
+        align-self: flex-end;
+        font-family: 'Fira Code';
+        text-transform: uppercase;
+    }
+
+
+    .contact-title img {
+        position: relative;
+        top: 0.8em;
+    }
+
+    .name-img img {
+        height: 80px;
+    }
+
+    .contact-section {
+        padding: 20px 10px;
+    }
 
 }
